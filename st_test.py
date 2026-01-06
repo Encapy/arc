@@ -3,7 +3,7 @@ import pandas as pd
 from io import BytesIO
 import re
 
-df_final = pd.read_excel(r"C:\Users\Alex\Desktop\arc\crafting_table.xlsx")
+df_final = pd.read_excel("crafting_table.xlsx")
 
 st.title("🧮 Crafting Material Summierer")
 
