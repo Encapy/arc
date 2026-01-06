@@ -5,7 +5,7 @@ import re
 
 df_final = pd.read_excel("crafting_table.xlsx")
 
-st.title("🧮 Crafting Material Summierer")
+st.title("Crafting Mats Calc")
 
 # ---------------------------------------------------------
 # 1) Basisnamen extrahieren (Stitcher I → Stitcher)
@@ -100,6 +100,6 @@ if material_totals is not None and not material_totals.empty:
     st.download_button(
         label="📥 Export Resources (Excel)",
         data=buffer,
-        file_name="Liste_materialien.xlsx",
+        file_name="Materialliste.xlsx",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
